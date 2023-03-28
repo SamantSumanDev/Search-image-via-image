@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getImage(String imgUrl) {
         String engine = "google_lens";
-        String api_key = "acbb8a459eff4a428d69a9e00bbc14c18dfa690b43563c71b1c6e52721df52eb";
+        String api_key = "genereted api key";
         ApiInterface apiInterface = ApiUtils.getData();
         Call<ImgSearchModel> call = apiInterface.getImage(engine, imgUrl, api_key);
         call.enqueue(new Callback<ImgSearchModel>() {
